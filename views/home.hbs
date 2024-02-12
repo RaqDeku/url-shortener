@@ -70,17 +70,6 @@
         flex-direction: column;
         margin-bottom: 2rem;
       }
-      .form-group .copy {
-        display: inline-flex;
-        position: relative;
-      }
-
-      .form-group .copy button {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      
       .form-group label{
         margin-bottom: 1.5rem;
         font-size: 20px;
@@ -144,10 +133,7 @@
                 </div>
                 <div class="form-group">
                   <label for="shortUrl">Shorten Url</label>
-                  <div class="copy">
-                    <input type="text" name="shortUrl" value={{shortUrl}} readonly>
-                    <button>copy</button>
-                  </div>
+                  <input type="text" name="shortUrl" value={{shortUrl}} readonly>
                 </div>
                 <div>
                   <button type="submit" class="button" style="width: 100%; margin-top: 2rem;">Shorten</button>

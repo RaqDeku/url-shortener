@@ -29,5 +29,5 @@ func (h *GetUrlHandler) GetUrl(c *fiber.Ctx) error {
 		return err
 	}
 
-	return c.Status(200).Redirect(url.LongUrl)
+	return c.Status(302).Redirect(url.LongUrl)
 }
